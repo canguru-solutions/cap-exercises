@@ -64,7 +64,7 @@ module.exports = (srv) => {
             if (course.spot < 10) {
                 course.description = '(Limited spots available!) ' + course.description
             }
-            newCourses.push(x)
+            newCourses.push(course)
         })
         return newCourses
     });
