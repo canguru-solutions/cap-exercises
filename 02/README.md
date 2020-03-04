@@ -51,7 +51,7 @@ cds init --help
 For this workshop we are going to create a basic project so you can use following command:
 
 ```
-cds init training-reservations
+cds init training-reservations --add hana,mta
 ```
 
 If you want to learn more about the options that you can add to the `cds init` command then you can have a look on https://github.com/SAP-samples/cloud-cap-samples or on https://cap.cloud.sap/docs/get-started
