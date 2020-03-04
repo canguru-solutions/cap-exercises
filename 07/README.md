@@ -73,7 +73,7 @@ At this point you should see the following folder setup:
 
 Create a container application to run the annotations
 
-:point_right: Create the manifest
+:point_right: Create the manifest.json
 ```
 {
 	"_version": "1.8.0",
@@ -85,7 +85,7 @@ Create a container application to run the annotations
 		"i18n": "i18n/i18n.properties",
 		"dataSources": {
 			"CourseService": {
-				"uri": "/courses/",
+				"uri": "/course/",
 				"type": "OData",
 				"settings": {
 					"odataVersion": "4.0"
@@ -160,7 +160,7 @@ sap.ui.define(["sap/fe/AppComponent"],
 
 ### 4. Add course related annotations
 
-In the webapp folder, we will a 'fiori-service.cds' file that contains the UI 
+Next to the webapp folder, we will create a 'fiori-service.cds' file that contains the UI 
 of our course application.
 
 Open the file and add following annotations:
