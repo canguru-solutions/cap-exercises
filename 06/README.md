@@ -37,7 +37,7 @@ module.exports = (srv) => {
 
 ### 3. Test the custom logic
 
-When starting the service you'll see:
+When starting the service you'll see (in your powershell/terminal):
 
 ![Starting service with custom logic](custom_logic_start.png)
 
@@ -49,7 +49,13 @@ When requesting all courses from the service you'll see the custom was triggered
 
 Replace the code we added above with:
 
-```srv.after ('READ','Courses', request => {
+```const cds = require('@sap/cds')
+/**
+ * Implementation for CatalogService defined in ./cat-service.cds
+ */
+module.exports = (srv) => {    
+
+    srv.after ('READ','Courses', request => {
         console.log("Logged from custom logic");
         let newCourses = [];
         request.forEach(course => {
@@ -60,6 +66,7 @@ Replace the code we added above with:
         })
         return newCourses
     });
+}
 ```
 
 So the result looks like:
