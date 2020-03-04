@@ -23,7 +23,8 @@ All custom logic for a service is contained in a JavaScript file with the same n
 
 :point_right: Add this sceleton to the file:
 
-```const cds = require('@sap/cds')
+```
+const cds = require('@sap/cds')
 /**
  * Implementation for CatalogService defined in ./cat-service.cds
  */
@@ -49,7 +50,8 @@ When requesting all courses from the service you'll see the custom was triggered
 
 Replace the code we added above with:
 
-```const cds = require('@sap/cds')
+```
+const cds = require('@sap/cds')
 /**
  * Implementation for CatalogService defined in ./cat-service.cds
  */
