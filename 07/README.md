@@ -198,7 +198,6 @@ LineItem: [
     {Value: title, 			Label:'Title'},
     {Value: description, 	Label:'Description'},
     {Value: courseType, 	Label:'Course Type'},
-    {Value: spotsAvailable, Label:'Spots Available'},
     {Value: spots, 			Label:'Spots'}
 ],
 ```
@@ -332,6 +331,12 @@ You should see an output similar to this:
 
 ### 7. Add expands to the UI
 
+Replace the brackets with the following expands at the end of 
+annotate CourseService.Courses with @(
+	UI: {
+    }
+) { }; <--
+
 ``` 
 {
 	createdAt @UI.HiddenFilter:false;
@@ -342,6 +347,9 @@ You should see an output similar to this:
 	reservations @ValueList.entity:'Reservations';
 }
 ``` 
+
+Add the following annotations underneath 'annotate CourseService.Course'
+
 ``` 
 annotate CourseService.Trainers with @(
 	UI: {
