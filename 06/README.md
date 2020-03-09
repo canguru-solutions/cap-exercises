@@ -61,7 +61,7 @@ module.exports = (srv) => {
         console.log("Logged from custom logic");
         let newCourses = [];
         request.forEach(course => {
-            if (course.spot < 10) {
+            if (course.spots < 10) {
                 course.description = '(Limited spots available!) ' + course.description
             }
             newCourses.push(course)

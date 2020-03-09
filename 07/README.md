@@ -202,7 +202,7 @@ LineItem: [
 ],
 ```
 
-Create a new route in your manifest with corresponding target:
+Create a new route in your manifest.json with corresponding target:
 Route:
 ```
 {
@@ -268,8 +268,7 @@ FieldGroup#Details: {
 FieldGroup#Planning: {
     Data: [
         {Value: days, Label:'Days'},
-        {Value: spots, Label:'Spots'},
-        {Value: status, Label:'Status'}
+        {Value: spots, Label:'Spots'}
     ]
 },
 
@@ -280,7 +279,7 @@ FieldGroup#Trainer: {
 }
 ```
 
-Create a new route in your manifest with corresponding target:
+Create a new route in your manifest.json with corresponding target:
 Route:
 ```
 {
@@ -331,7 +330,7 @@ You should see an output similar to this:
 
 ### 7. Add expands to the UI
 
-Replace the brackets with the following expands at the end of 
+Replace the empty brackets with the following expands at the end of 
 annotate CourseService.Courses with @(
 	UI: {
     }
